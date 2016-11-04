@@ -1,0 +1,51 @@
+<!doctype html>
+<html manifest="doko-counter.1.manifest">
+    <head>
+        <title>DoKo - Counter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.2.1/material.min.css">
+        <link rel="stylesheet" href="/style.css" type="text/css" />
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">DoKo - Counter</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <nav class="mdl-navigation">
+                        <a href="javascript:void(0);" 
+                           onclick="deal();" 
+                           class="mdl-navigation__link">Restart</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">DoKo - Counter</span>
+                <nav class="mdl-navigation">
+                    <a href="javascript:void(0);" onclick="deal();" class="mdl-navigation__link">(Re)Start Game</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--1-col" style="text-align:center">
+                        <button onclick="deal();" 
+                                class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                              <i class="material-icons">autorenew</i>
+                        </button>
+                    </div>
+                    <div class="mld-grid">
+                        <div class="mdl-cell mdl-cell--1-col">
+                            <x-deck id="deck-container" auto-deal=""></x-deck>         
+                        </div>
+                    </div>
+                    
+                </div>
+            </main>
+        </div>
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.23/webcomponents.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.2.1/material.min.js"></script>
+        <script src="/app.js"></script>
+    </body>
+</html>
