@@ -1,0 +1,36 @@
+
+body {
+    background: lightgrey;
+}
+
+.cart-base {
+    width: 222px;
+    height: 323px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background: white;
+    border-radius: 10px;
+    font-size: 5em;
+    box-shadow: grey 1px 1px 1px;
+}
+
+.cart {
+    border: 0;
+}
+
+.cart-result {
+    background-color: #4caf50;
+}
+
+.cart-pre-result {
+    background-color: #ff5722;
+}
+
+
+x-cart:focus { border: solid lime 2px}
+
+x-deck {
+    position: relative;
+}
